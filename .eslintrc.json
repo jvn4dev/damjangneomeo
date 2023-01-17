@@ -14,7 +14,7 @@
     "prettier"
   ],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
     // 사용되지 않는 변수를 에러로 인식
     "@typescript-eslint/no-explicit-any": "error"
     // any 타입 정의를 에러로 인식
