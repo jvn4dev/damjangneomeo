@@ -1,0 +1,15 @@
+.navbar_wrapper {
+  position: absolute;
+  z-index: 999;
+  top: 31px;
+  left: 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.navbar_wrapper > a {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+}
