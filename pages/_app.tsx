@@ -6,9 +6,8 @@ import '@/public/static/fonts/style.css';
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<AppLayout>
-				<Component {...pageProps} />
-			</AppLayout>
+			<AppLayout />
+			<Component {...pageProps} />
 		</>
 	);
 }
