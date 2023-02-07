@@ -1,6 +1,9 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import S from './AppLayout.module.scss';
+import HeaderMenu from '@/components/Common/HeaderMenu';
+import { HeaderDataType } from '@/types/const/headerDataTypes';
+import { headerDataList } from '@/const/headerData';
 
 const AppLayout = () => {
 	return (
@@ -14,11 +17,9 @@ const AppLayout = () => {
 						height={29}
 					/>
 				</Link>
-				<Link href="/damjangneomeo">DAMJANGNEOMEO</Link>
-				<Link href="/space">SPACE</Link>
-				<Link href="/contents">CONTENTS</Link>
-				<Link href="/plli">PLLI</Link>
-				<Link href="/contact">CONTACT</Link>
+				{headerDataList?.map((headerData: HeaderDataType, index: number) => (
+					<HeaderMenu key={index} headerData={headerData} />
+				))}
 				<Link
 					href="https://instagram.com/damjangneomeo"
 					style={{
