@@ -1,0 +1,17 @@
+.active {
+  color: white;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 210px;
+  gap: 19px;
+  width: 250px;
+
+  &_content {
+    width: fit-content;
+    max-width: 500px;
+  }
+}

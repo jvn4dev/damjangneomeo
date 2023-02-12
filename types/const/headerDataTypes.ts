@@ -1,6 +1,9 @@
 export type HeaderDataType = {
 	title: string;
-	menus: HeaderMenus;
+	menus: HeaderMenus[] | null;
 };
 
-export type HeaderMenus = string[] | null;
+export type HeaderMenus = {
+	name: string;
+	url: string;
+};

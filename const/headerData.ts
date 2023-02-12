@@ -3,14 +3,18 @@ import { HeaderDataType } from '@/types/const/headerDataTypes';
 export const headerDataList: HeaderDataType[] = [
 	{
 		title: 'DAMJANGNEOMEO',
-		menus: ['ABOUT', 'PEOPLE', 'PRESS'],
+		menus: [
+			{ name: 'ABOUT', url: '/about' },
+			{ name: 'PEOPLE', url: '/people' },
+			{ name: 'PRESS', url: '/press' },
+		],
 	},
 	{
 		title: 'SPACE',
 		menus: [
-			'ULKIN Pop-up Store(2022)',
-			'A to B Pop-up Store(2022)',
-			"Deblle Men's Hair",
+			{ name: 'ULKIN Pop-up Store(2022)', url: '/space/1' },
+			{ name: 'A to B Pop-up Store(2022)', url: '/space/2' },
+			{ name: "Deblle Men's Hair", url: '/space/3' },
 		],
 	},
 	{
