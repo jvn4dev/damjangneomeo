@@ -1,5 +1,6 @@
 import { HeaderDataType } from '@/types/const/headerDataTypes';
 import S from './HeaderMenu.module.scss';
+import SubHeader from '@/components/Header/SubHeader';
 
 const HeaderMenu = (props: HeaderMenuProps) => {
 	const { headerData, onClickMenu, isDropdownActive } = props;
@@ -13,13 +14,7 @@ const HeaderMenu = (props: HeaderMenuProps) => {
 				{headerData.title}
 			</a>
 			{isDropdownActive && headerData.menus && (
-				<div className={S.dropdown}>
-					{headerData.menus.map((menu) => (
-						<a key={menu.name} className={S.dropdown_content} href={menu.url}>
-							{menu.name}
-						</a>
-					))}
-				</div>
+				<SubHeader subHeaderList={headerData.menus} />
 			)}
 		</>
 	);
